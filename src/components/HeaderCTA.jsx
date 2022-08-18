@@ -1,7 +1,7 @@
 const HeaderCTA = ({ props: { title, url, style } }) => {
-  const styleDef = `${style} p-4`;
+  const stylesCta = `${style} border-2`;
   return (
-    <a href={url} className={styleDef}>
+    <a href={url} className={stylesCta}>
       {title}
     </a>
   );

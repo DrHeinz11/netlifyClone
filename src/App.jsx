@@ -8,9 +8,9 @@ const propsCta = {
 };
 function App() {
   return (
-    <div>
-      <h1>hola esto es una prueba</h1>
-      <h1 className="font-sans lg:font-serif text-6xl">
+    <div className="p-8 bg-orange-300">
+      <h1 className="bg-orange-500">hola esto es una prueba</h1>
+      <h1 className="font-display bg-primary lg:font-serif text-6xl">
         Hola esto es una prueba con
       </h1>
       <HeaderCTA props={propsCta} />

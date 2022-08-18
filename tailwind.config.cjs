@@ -2,7 +2,8 @@
 module.exports = {
   content: ["./src/**/*.{html,js,jsx}"],
   theme: {
-    extend: {},
+    extend: { colors: { primary: "#2250f4" } },
+    fontFamily: { display: ["Coda", "cursive"] },
   },
   plugins: [],
 };
