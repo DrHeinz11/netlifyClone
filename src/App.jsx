@@ -1,29 +1,21 @@
 import "./styles/App.css";
+import propsCta from "./constants/data";
 import HeaderCTA from "./components/HeaderCTA";
 import HeadingTop from "./components/HeadingTop";
+import Navbar from "./containers/Navbar";
+import Header from "./containers/Header";
 
-const propsCta = [
-  {
-    key: "1",
-    title: "get in touch with us",
-    url: "https://tailwindcss.com/docs/",
-    style:
-      "font-cta font-medium bg-white capitalize font-w text-primary text-xl hover:border-secondary hover:text-secondary rounded-md border-primary py-0.5 px-6",
-  },
-];
 function App() {
   return (
-    <div className="bg-orange-300">
+    <div className="bg-orange-300 min-h-screen ">
       <HeadingTop />
-      <h1 className="bg-orange-500 text-4xl font-body">
-        hola esto es una prueba
-      </h1>
-      <h1 className="font-display bg-primary lg:font-serif text-6xl">
-        Hola esto es una prueba con
-      </h1>
-      {propsCta.map((e) => (
-        <HeaderCTA key={e.key} props={e} />
-      ))}
+      <Navbar />
+      <div className="translate-y-9 flex flex-col items-center p-4 gap-4 ">
+        <Header />
+        {propsCta.map((e) => (
+          <HeaderCTA key={e.key} props={e} />
+        ))}
+      </div>
     </div>
   );
 }
