@@ -7,10 +7,10 @@ import Header from "./containers/Header";
 
 function App() {
   return (
-    <div className="bg-orange-300 min-h-screen ">
+    <div className="grid grid-rows-[max-content,max-content,1fr] min-h-screen ">
       <HeadingTop />
       <Navbar />
-      <div className="translate-y-9 flex flex-col items-center p-4 gap-4 ">
+      <div className="flex flex-col items-center justify-center p-4 gap-4 ">
         <Header />
         {propsCta.map((e) => (
           <HeaderCTA key={e.key} props={e} />
