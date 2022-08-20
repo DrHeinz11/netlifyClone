@@ -1,7 +1,7 @@
 const Header = () => {
   return (
-    <div className="flex flex-col gap-4 aling-center px-4 mb-4">
-      <h1 className="font-display font-semibold text-3xl text-center">
+    <div className="flex flex-col gap-4 aling-center mb-4">
+      <h1 className="font-display font-semibold text-4xl text-center">
         Bring it all together
       </h1>
       <p className="font-body text-xl font-medium  text-center">
