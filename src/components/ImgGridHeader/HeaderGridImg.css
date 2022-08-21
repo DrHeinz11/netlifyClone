@@ -1,0 +1,35 @@
+.gridAreas {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "card-img1 card-img1 img3-icon ."
+    ". img2-icon card-img card-img"
+    ". card-img2 card-img2 img1-icon";
+}
+
+.card-img {
+  grid-area: card-img;
+}
+
+.card-img1 {
+  grid-area: card-img1;
+}
+
+.card-img2 {
+  grid-area: card-img2;
+}
+
+.img1-icon {
+  grid-area: img1-icon;
+}
+
+.img2-icon {
+  grid-area: img2-icon;
+}
+
+.img3-icon {
+  grid-area: img3-icon;
+}
